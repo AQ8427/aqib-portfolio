@@ -186,7 +186,7 @@ export default function ClarityCaseStudy() {
                     <Reveal delay={0.24}>
                         <div className="mt-16 overflow-hidden rounded-2xl border border-white/10 bg-[#111111]">
                             <Image
-                                src="/images/projects/clarity/reports.png"
+                                src="/images/projects/clarity/Reports.png"
                                 alt="Clarity reports experience"
                                 width={1600}
                                 height={900}
@@ -223,7 +223,7 @@ export default function ClarityCaseStudy() {
                     <Reveal delay={0.24}>
                         <div className="mt-16 overflow-hidden rounded-2xl border border-white/10 bg-[#111111]">
                             <Image
-                                src="/images/projects/clarity/customers.png"
+                                src="/images/projects/clarity/Customers.png"
                                 alt="Clarity customer detail experience"
                                 width={1600}
                                 height={900}
@@ -261,7 +261,7 @@ export default function ClarityCaseStudy() {
                     <Reveal delay={0.24}>
                         <div className="mt-16 overflow-hidden rounded-2xl border border-white/10 bg-[#111111]">
                             <Image
-                                src="/images/projects/clarity/analytics.png"
+                                src="/images/projects/clarity/Analytics.png"
                                 alt="Clarity analytics experience"
                                 width={1600}
                                 height={900}
@@ -299,7 +299,7 @@ export default function ClarityCaseStudy() {
                     <Reveal delay={0.24}>
                         <div className="mt-16 overflow-hidden rounded-2xl border border-white/10 bg-[#111111]">
                             <Image
-                                src="/images/projects/clarity/settings.png"
+                                src="/images/projects/clarity/Settings.png"
                                 alt="Clarity settings experience"
                                 width={1600}
                                 height={900}
