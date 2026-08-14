@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen overflow-hidden">
+        <section className="hero-section relative overflow-hidden md:min-h-screen md:h-auto">
             {/* Background Image */}
             <motion.div
                 initial={{ opacity: 0, scale: 1.08 }}
@@ -12,9 +12,10 @@ export default function Hero() {
                     duration: 1.4,
                     ease: "easeOut",
                 }}
-                className="absolute inset-0 bg-cover bg-[center_25%] bg-no-repeat"
+                className="hero-bg absolute inset-0 bg-cover bg-no-repeat"
                 style={{
                     backgroundImage: "url('/images/aqib-hero.jpg')",
+                    backgroundPosition: 'center 25%'
                 }}
             />
 
@@ -25,10 +26,11 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/90 to-transparent" />
 
             {/* Orange Glow */}
-            <div className="absolute right-[12%] top-1/2 h-[450px] w-[450px] -translate-y-1/2 rounded-full bg-[#FF5A00]/8 blur-[140px]" />
+            <div className="hero-glow absolute right-[12%] top-1/2 h-[450px] w-[450px] -translate-y-1/2 rounded-full bg-[#FF5A00]/8 blur-[140px]" />
 
             {/* Hero Content */}
-            <div className="relative z-10 mx-auto flex min-h-[calc(100vh-88px)] max-w-7xl items-center px-6 pb-24 pt-16 lg:px-8 lg:pb-20 lg:pt-12">
+            {/* Desktop/Tablet content (unchanged) */}
+            <div className="hidden md:flex relative z-10 mx-auto flex min-h-[calc(100vh-88px)] max-w-7xl items-center px-6 pb-24 pt-16 lg:px-8 lg:pb-20 lg:pt-12">
                 <div className="max-w-4xl">
 
                     {/* Label */}
@@ -109,6 +111,23 @@ export default function Hero() {
                         </a>
                     </motion.div>
 
+                </div>
+            </div>
+
+            {/* Mobile compact banner */}
+            <div className="md:hidden mobile-content relative z-10 flex items-center px-4">
+                <div className="w-full flex items-center">
+                    <div className="flex-1">
+                        <div className="bg-gradient-to-r from-black/75 to-transparent p-3 rounded-sm max-w-[70%]">
+                            <p className="text-xs font-medium uppercase tracking-widest text-[#FF5A00]">
+                                Product Designer
+                            </p>
+                            <h2 className="mt-1 text-lg font-semibold text-white">
+                                Designing better experiences
+                            </h2>
+                        </div>
+                    </div>
+                    <div className="w-1/3" />
                 </div>
             </div>
 

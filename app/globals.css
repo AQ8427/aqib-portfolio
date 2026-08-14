@@ -34,3 +34,36 @@ section[id],
 [id] {
   scroll-margin-top: 6rem;
 }
+
+/* Mobile-specific hero background positioning */
+.hero-bg {
+  background-position: center 25%;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-bg {
+    /* shift the focal point to the right so the face is visible */
+    background-position: 75% center;
+    background-size: cover;
+  }
+  /* Compact hero banner adjustments */
+  /* Make the hero a compact banner that sits under the fixed navbar.
+     The visible banner below the navbar will be ~180px (nav overlays the top). */
+  .hero-section {
+    height: calc(88px + 180px);
+    min-height: calc(88px + 150px);
+    max-height: calc(88px + 190px);
+  }
+
+  /* Ensure the mobile content starts below the fixed navbar */
+  .mobile-content {
+    padding-top: 88px; /* matches navbar height */
+    height: 180px; /* visible area below navbar */
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Hide the oversized glow on small screens */
+  .hero-glow { display: none; }
+}
