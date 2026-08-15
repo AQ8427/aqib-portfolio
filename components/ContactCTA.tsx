@@ -64,8 +64,11 @@ export default function ContactCTA() {
       <footer className="border-t border-white/10 bg-[#0A0A0A] px-6 py-10 text-white lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-xl font-medium tracking-[-0.02em]">Muhammad Aqib Shahzad</p>
-            <p className="mt-1 text-sm text-zinc-500">Product Designer</p>
+            <img
+              src="/images/aq-logo-full.svg"
+              alt="AQIB Shahzad — Product Designer"
+              className="w-[180px] sm:w-[220px] md:w-[260px] max-w-full h-auto"
+            />
           </div>
 
           <nav className="flex flex-wrap items-center gap-5 text-sm text-zinc-400">

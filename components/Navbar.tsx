@@ -28,9 +28,15 @@ export default function Navbar() {
                 <div className="relative flex w-full items-center">
                     <Link
                         href="/"
-                        className="relative text-xl font-bold tracking-tight transition-transform duration-300 hover:scale-105"
+                        className="relative inline-flex items-center tracking-tight transition-transform duration-300 hover:scale-105"
+                        aria-label="Home"
                     >
-                        AQ<span className="text-[#FF5A00]">.</span>
+                        <img
+                            src="/images/aq-logo.svg"
+                            alt="AQ"
+                            className="block w-[44px] md:w-[52px] h-auto"
+                            loading="eager"
+                        />
                     </Link>
 
                     <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 text-sm text-zinc-400 md:flex">
