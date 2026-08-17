@@ -20,7 +20,7 @@ export default function Hero() {
             />
 
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/35" />
+            <div className="absolute inset-0 bg-black/00" />
 
             {/* Left Gradient */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/90 to-transparent" />
